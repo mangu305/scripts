@@ -1,7 +1,7 @@
 #From PowerShell Gallery
 # URL - https://www.powershellgallery.com/packages/PowerStigScan/2.0.1.0/Content/Common%5CPowerStigScan.Scap.ps1
 
-#region Power Stig Version Map
+#region PowerStig Scap Version Map
 function Get-PowerStigScapVersionMap
 {
     $verHash= @{
@@ -36,6 +36,8 @@ function Get-PowerStigScapVersionMap
    
 }
 #endregion
+
+#region Scap Only Roles
 Function Get-ScapOnlyRoles
 {
     $sRoles =   "Adobe_Acrobat_Reader_DC_Classic",
@@ -45,10 +47,10 @@ Function Get-ScapOnlyRoles
 
     Return $sRoles
 }
+#endregion
 
 
-
-
+#region PowerStig Scap Results
 function Get-PowerStigScapResults
 {
     [cmdletBinding()]
@@ -116,8 +118,9 @@ function Get-PowerStigScapResults
 
     Return $outObj
 }
+#endregion
 
-
+#region PowerStig Scap Version
 function Get-PowerStigScapVersion
 {
     [cmdletBinding()]
@@ -159,7 +162,9 @@ function Get-PowerStigScapVersion
     
     Return $testVer
 }
+#endregion
 
+#region PowerScap Output Path
 function Get-PowerScapOutputPath
 {
     $workingPath                = Split-Path $PsCommandPath
@@ -172,7 +177,9 @@ function Get-PowerScapOutputPath
 
     return $directory
 }
+#endregion
 
+#region PowerStig Role to Scap
 function Convert-PowerStigRoleToScap
 {
     [cmdletBinding()]
@@ -227,7 +234,9 @@ function Convert-PowerStigRoleToScap
         }
     }
 }
+#endregion
 
+#region Convert Scap Role to PowerStig
 Function Convert-ScapRoleToPowerStig
 {
     [cmdletBinding()]
@@ -255,7 +264,9 @@ Function Convert-ScapRoleToPowerStig
     }
 
 }
+#endregion
 
+#region PowerStig Scap Basic Options
 Function Set-PowerStigScapBasicOptions
 {
     $workingPath = Split-Path $PsCommandPath
