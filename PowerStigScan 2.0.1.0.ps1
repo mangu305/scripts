@@ -324,7 +324,9 @@ Function Set-PowerStigScapBasicOptions
     $configCommand = "$cmdStart$strSetOpt -q"    
     Invoke-Expression $configCommand | Out-Null
 }
+#endregion
 
+#region PowerStig Scap Role XML
 function Set-PowerStigScapRoleXML
 {
     [cmdletBinding()]
@@ -450,3 +452,4 @@ function Set-PowerStigScapRoleXML
 
     return
 }
+#endregion
