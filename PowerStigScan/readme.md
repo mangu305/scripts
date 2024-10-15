@@ -1,6 +1,7 @@
-Module to Audit systems using the PowerStig engine. By Matt Preston
-   PowerStigScan Repo: https://github.com/mapresto/PowerStigScan.
-   PowerStig Repo: https://github.com/Microsoft/PowerStig
+Module to Audit systems using the PowerStig engine.     By Matt Preston
+   
+   PowerStigScan Repo:    https://github.com/mapresto/PowerStigScan.
+   PowerStig Repo:       https://github.com/Microsoft/PowerStig
 
 --- Installation Options
 
